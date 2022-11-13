@@ -26,9 +26,9 @@ export const Logo = styled.img`
 `;
 
 export const Profile = styled.img`
-  width: 18%;
+  width: 36%;
   @media screen and (min-width: 768px) {
-    width: 22%;
+    width: 28%;
   }
 `;
 
@@ -37,9 +37,9 @@ export const ButtonProfileCont = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
   @media screen and (min-width: 768px) {
-    width: 25%;
+    width: 10%;
   }
 `;
 

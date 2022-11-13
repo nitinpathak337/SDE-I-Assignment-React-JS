@@ -7,8 +7,10 @@ dependencies:
   react-icons: 4.6.0_react@18.2.0
   react-loader: 2.4.7_react-dom@18.2.0+react@18.2.0
   react-loader-spinner: 5.3.4_react-dom@18.2.0+react@18.2.0
+  react-router: 6.4.3_react@18.2.0
   react-router-dom: 5.2.0_react@18.2.0
   react-scripts: 5.0.1_react@18.2.0
+  react-toastify: 9.1.1_react-dom@18.2.0+react@18.2.0
   styled-components: 5.3.6_react-dom@18.2.0+react@18.2.0
   web-vitals: 2.1.4
 lockfileVersion: 5.2
@@ -2106,6 +2108,12 @@ packages:
         optional: true
     resolution:
       integrity: sha512-7QV4cqUwhkDIHpMAZ9mestSJ2DMIotVTbOUwbiudhjCRTAWWKIaBecELiEM2LT3AHFeOAaHIcFu4dbXjX+9GBA==
+  /@remix-run/router/1.0.3:
+    dev: false
+    engines:
+      node: '>=14'
+    resolution:
+      integrity: sha512-ceuyTSs7PZ/tQqi19YZNBc5X7kj1f8p+4DIyrcIYFY9h+hd1OKm4RqtiWldR9eGEvIiJfsqwM4BsuCtRIuEw6Q==
   /@rollup/plugin-babel/5.3.1_@babel+core@7.20.2+rollup@2.79.1:
     dependencies:
       '@babel/core': 7.20.2
@@ -3690,6 +3698,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==
+  /clsx/1.2.1:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
   /co/4.6.0:
     dev: false
     engines:
@@ -8830,6 +8844,17 @@ packages:
       react: '>=15'
     resolution:
       integrity: sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw==
+  /react-router/6.4.3_react@18.2.0:
+    dependencies:
+      '@remix-run/router': 1.0.3
+      react: 18.2.0
+    dev: false
+    engines:
+      node: '>=14'
+    peerDependencies:
+      react: '>=16.8'
+    resolution:
+      integrity: sha512-BT6DoGn6aV1FVP5yfODMOiieakp3z46P1Fk0RNzJMACzE7C339sFuHebfvWtnB4pzBvXXkHP2vscJzWRuUjTtA==
   /react-scripts/5.0.1_react@18.2.0:
     dependencies:
       '@babel/core': 7.20.2
@@ -8894,6 +8919,17 @@ packages:
         optional: true
     resolution:
       integrity: sha512-8VAmEm/ZAwQzJ+GOMLbBsTdDKOpuZh7RPs0UymvBR2vRk4iZWCskjbFnxqjrzoIvlNNRZ3QJFx6/qDSi6zSnaQ==
+  /react-toastify/9.1.1_react-dom@18.2.0+react@18.2.0:
+    dependencies:
+      clsx: 1.2.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    resolution:
+      integrity: sha512-pkFCla1z3ve045qvjEmn2xOJOy4ZciwRXm1oMPULVkELi5aJdHCN/FHnuqXq8IwGDLB7PPk2/J6uP9D8ejuiRw==
   /react/18.2.0:
     dependencies:
       loose-envify: 1.4.0
@@ -10813,7 +10849,9 @@ specifiers:
   react-icons: ^4.6.0
   react-loader: ^2.4.7
   react-loader-spinner: ^5.3.4
+  react-router: ^6.4.3
   react-router-dom: 5.2.0
   react-scripts: 5.0.1
+  react-toastify: ^9.1.1
   styled-components: ^5.3.6
   web-vitals: ^2.1.4

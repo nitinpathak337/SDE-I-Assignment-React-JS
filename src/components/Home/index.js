@@ -1,5 +1,6 @@
 // import StyledComponent from './styledComponent'
 import { Component } from "react";
+
 import { ThreeDots } from "react-loader-spinner";
 import { AiOutlineSearch } from "react-icons/ai";
 

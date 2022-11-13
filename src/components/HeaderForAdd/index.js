@@ -1,14 +1,14 @@
-import { Link, withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 
 import {
   HeaderContainer,
   Logo,
+  AddButton,
   Profile,
   ButtonProfileCont,
-  AddButton,
 } from "./styledComponent";
 
-const Header = (props) => {
+const HeaderForAdd = () => {
   return (
     <HeaderContainer>
       <Logo
@@ -16,9 +16,6 @@ const Header = (props) => {
         alt="logo"
       />
       <ButtonProfileCont>
-        <Link to="/add">
-          <AddButton>ADD ITEM</AddButton>
-        </Link>
         <Link to="/login">
           <AddButton>LOG OUT</AddButton>
         </Link>
@@ -31,4 +28,4 @@ const Header = (props) => {
   );
 };
 
-export default withRouter(Header);
+export default withRouter(HeaderForAdd);
